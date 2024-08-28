@@ -1,0 +1,23 @@
+def swap_commas_dots(stri):
+    return stri.replace(',', 'check').replace('.', ',').replace('check', '.')
+
+def process_string(stri, n):
+  
+    s = swap_commas_dots(stri)
+
+ 
+    f_part = stri[:n].lower()
+    s_part = stri[n:].upper()
+
+   
+    return f_part + s_part
+
+
+input_string = "Yes, Real time monitoring, Immediate alerts."
+n = 6
+
+
+result = process_string(input_string, n)
+
+
+print(result)
